@@ -1,0 +1,82 @@
+*{
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #fff;
+}
+.header{
+    width: 100%;
+    height: 15vh;
+    color: #fff;
+    background-color:rgb(2, 2, 32);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenu{
+    height:85vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.contenu .def{
+    background-color: rgb(0, 139, 139);
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.contenu .dact{
+    width: 40%;
+}
+.contenu .dact .text{
+    background-color: lightgray;
+    margin-top: 20px;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.contenu .dact textarea{
+    width: 97%;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 8px solid gray;
+    border-radius: 5px;
+}
+.contenu .dact textarea:focus{
+    outline: none;
+}
+.contenu .chron{
+    background-color: rgb(0, 139, 139);
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contenu .chron .chrono{
+    width: 60%;
+    display: flex;
+    font-size: 50px;
+}
+.contenu .chron .restart{
+    width: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #fff;
+    color: rgb(255, 69, 0);
+    border: 5px solid rgb(255, 69, 0);
+    border-radius: 5px;
+    pointer-events: all;
+    cursor: pointer;
+}
+.contenu .chron .restart:hover{
+    background-color: rgb(255, 69, 0);
+    color: #fff;
+}

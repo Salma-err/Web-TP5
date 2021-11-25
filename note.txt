@@ -1,0 +1,46 @@
+
+function ValidC(e){
+    console.log(textArea.value);
+    console.log(text.innerHTML);
+    if(intervalId != null){
+        if(textArea.value.length != text.innerHTML.length){
+            console.log("le texte ecrit est plus court que le texte fourni");
+            console.log("text area "+textArea.value[i]);
+            console.log("text fourni "+text.innerHTML[i]);
+            if(textArea.value[i] == text.innerHTML[i]){
+                textArea.style.borderColor = 'rgb(0, 139, 139)';
+            }
+            else{
+                console.log("erreur dans "+textArea.value[i]);
+                textArea.style.borderColor = 'rgb(255, 69, 0)';
+            }
+            i++;
+        }
+        else{
+            console.log("le texte ecrit est égale au texte fourni id= "+intervalId);
+            clearInterval(intervalId);
+        }
+    }
+    else{
+        console.log("Avant Timer");
+        Timer();
+        console.log("Après Timer");
+        if(textArea.value.length != text.innerHTML.length){
+            console.log("le texte ecrit est plus court que le texte fourni");
+            console.log("text area "+textArea.value[i]);
+            console.log("text fourni "+text.innerHTML[i]);
+            if(textArea.value[i] == text.innerHTML[i]){
+                textArea.style.borderColor = 'rgb(0, 139, 139)';
+            }
+            else{
+                console.log("erreur dans "+textArea.value[i]);
+                textArea.style.borderColor = 'rgb(255, 69, 0)';
+            }
+            i++;
+        }
+        else{
+            console.log("le texte ecrit est égale au texte fourni id= "+intervalId);
+            clearInterval(intervalId);
+        }
+    }
+}
